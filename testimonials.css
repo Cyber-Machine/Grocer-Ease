@@ -1,0 +1,178 @@
+
+body{
+    overflow-x: hidden;
+}
+
+.logo img{
+    height: 65px;
+width: 320px;
+left: 40px;
+top: 69px;
+border-radius: nullpx;
+
+}
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sbar{
+    width: 550px;
+    border-radius: 50px;
+    height: 50px;
+    outline: none;
+    border: 2px solid #d9d9d9;
+    text-align: left;
+    padding-left: 10px;
+}
+.sbar:hover{
+    box-shadow: 0px 0px 8px #0c70505e;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 849px;
+    height: 47px;
+    left: calc(50% - 849px/2 + 12.5px);
+    top: 130px;
+    justify-content: space-between;
+    font-size: 36px;
+    
+
+}
+
+button {
+    padding: 1em 1em;
+    /* color: #17C28B; */
+    background-color: rgba(23, 194, 139, 0.009);
+    border: none;
+    z-index: -1;
+   
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    box-shadow: none;
+    
+    color: #17C28B;
+    
+   }
+   
+   button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    border-radius: 5%;
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+   }
+
+
+
+
+
+
+
+
+
+.home-testimonial {
+    background-color: #17C28B1A;
+    height: 400px;
+    position: relative;
+    top: 300px;
+}
+
+.home-testimonial-bottom {
+    background-color:white;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    position: relative;
+    height: 130px;
+    top: 190px
+}
+
+.iconify {
+    position: absolute;
+width: 143px;
+height: 120px;
+bottom: 381px;
+top: 39px;
+    background: url('https://api.iconify.design/ci/double-quotes-l.svg?color=%2317c28b&width=143&height=120') no-repeat center center / contain;
+}
+
+.home-testimonial h2 {
+    font-family: 'Roboto Slab', serif;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: left;
+position: absolute;
+    color:#17C28B;
+    margin-top: 100px;
+
+}
+
+.testimonial-inner {
+    position: relative;
+    top: -174px
+}
+
+.testimonial-pos {
+    position: relative;
+    top: 24px
+}
+
+.testimonial-inner .tour-desc {
+    border-radius: 5px;
+    padding: 40px
+}
+
+.color-grey-3 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2
+}
+
+.testimonial-inner img.tm-people {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: none
+}
+
+.link-name {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2
+}
+
+.link-position {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+    color: #6c83a2
+}
+
+.tour-desc{
+    height:400px;
+    background-color: white;
+box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+border-radius: 1000px;
+}
