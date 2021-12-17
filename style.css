@@ -189,3 +189,50 @@ top: 300px;
     transition: 0.3s ease-out;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    padding: 1em 1em;
+    /* color: #17C28B; */
+    background-color: rgba(23, 194, 139, 0.009);
+    border: none;
+    z-index: -1;
+   
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    box-shadow: none;
+    
+    color: #17C28B;
+    
+   }
+   
+   button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    border-radius: 5%;
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+   }
