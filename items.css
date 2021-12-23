@@ -1,0 +1,359 @@
+
+body{
+    overflow-x: hidden;
+}
+
+
+.logo img{
+    height: 65px;
+width: 320px;
+left: 40px;
+top: 69px;
+border-radius: nullpx;
+
+}
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sbar{
+    width: 550px;
+    border-radius: 50px;
+    height: 50px;
+    outline: none;
+    border: 2px solid #d9d9d9;
+    text-align: left;
+    padding-left: 10px;
+}
+.sbar:hover{
+    box-shadow: 0px 0px 8px #0c70505e;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 849px;
+    height: 47px;
+    left: calc(50% - 849px/2 + 12.5px);
+    top: 130px;
+    justify-content: space-between;
+    
+
+}
+
+.navitems{
+    position: static;
+left: 0%;
+right: 84.69%;
+top: 0%;
+bottom: 0%;
+
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 47px;
+
+color: #17C28B;
+
+}
+button {
+    padding: 1em 1em;
+    /* color: #17C28B; */
+    background-color: rgba(23, 194, 139, 0.009);
+    border: none;
+    z-index: -1;
+   
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 47px;
+    box-shadow: none;
+    
+    color: #17C28B;
+    
+   }
+   
+   button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    border-radius: 5%;
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+   }
+
+
+   .card{
+       color: rgb(97, 92, 92);
+       /* background-image: url(./Assets/logog.svg); */
+       background-size: cover;
+       padding: 10px;
+       max-width: 30ch;
+       padding: 10em 0 0;
+       border-radius: 0.55rem;
+       overflow: hidden;
+       transition: transform 500ms ease;
+
+   }
+
+   .card-content{
+       --padding:1.5rem;
+       padding: var(--padding);
+       padding: 1.5em;
+       background: linear-gradient(
+           /* rgba(23, 194, 139, 0.9), */
+           rgba(82,204,155,0.2),
+           rgba(82,204,155,0.3)
+       );
+       transform: translateY(65%);
+       transition: transform 500ms ease;
+   }
+   .card:hover{
+       transform: scale(1.04);
+   }
+   .card-body{
+       color: rgb(97, 97, 97);
+   }
+   .card-title{
+       position: relative;
+       width: max-content;
+   }
+   .price{
+       position:absolute;
+       left: 60%;
+       bottom: 10%;
+       font-size: large;
+       font-weight: bold;
+       
+   }
+   .card-title::after{
+       content: '';
+       position: absolute;
+       height:3px;
+       width: 110%;
+       background-color:#09f194;
+       left: calc(var(--padding)*-1);
+       bottom: 0px;
+       transform: scaleX(0);
+       transition: transform 500ms ease;
+       transform-origin: left;
+   }
+
+   .card:hover .card-title::after{
+       transform: scaleX(1);
+   }
+
+   .card:hover .card-content{
+       transform: translateY(0%);
+       transition: transform 500ms ease;
+   }
+
+   
+
+   .button button{
+    padding: 0.1em 0.4em;
+    border: 2px solid #2EE59D;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ddd;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #2EE59D;
+    text-shadow: 1px 1px #2EE59D;
+   }
+   .button button::before{
+        content: '';
+        width: 0;
+        height: 300%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: #2EE59D;
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+       }
+       
+    .button button:hover::before {
+        width: 105%;
+       }
+       
+   .button button:hover {
+        color: #111;
+       }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  grid-gap: 50px 75px;
+}
+
+.grid-padding{
+    padding:5px;
+}
+
+ul{
+    list-style-type: none;
+}
+   .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+      }
+      
+    .menu li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      
+     .menu li a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+    .menu  li a:hover:not(.active) {
+        background-color: rgb(157, 219, 168);
+        color: white;
+      }
+
+menu{
+    position: absolute;
+    width:20%;
+    top: 200px;
+    
+}
+
+.menu-container{
+    position: absolute;
+    top: 815px;
+    width: 300px;
+    font-size: 25px;
+}
+
+.categories{
+    position: absolute;
+    top: 740px;
+    width: 300px;
+    font-size: 30px;
+    left:50px;
+    color: #04AA6D;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+letter-spacing: 1.5px;
+}
+
+.herobanner{
+    overflow-x: hidden;
+    z-index: -1;
+    position: absolute;
+    top: 230px;
+}
+.herbanner img{
+    width: 120%;
+}
+
+.herotitle{
+    position: absolute;
+    top: 300px;
+    font-size: 72px;
+    left: 18%;
+    letter-spacing: 1px;
+    color: #0f8661;
+
+}
+
+.htitle{
+    text-align: center;
+
+}
+
+.hpara{
+    text-align: center;
+}
+.heroparagraph{
+    position: absolute;
+    top: 420px;
+    font-size: 36px;
+    left:30%;
+    letter-spacing: 2px;
+}
+
+
+
+.footer-container{
+    
+    background-color: #E7F5F4;
+    padding-bottom: 14rem;
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    position:absolute;
+    top:1700px;
+    height:325px;
+    width: 100%;
+    
+}
+
+.footer{
+    width: 80%;
+    height: 40vh;
+    background-color:#E7F5F4;
+    color:#000000;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.footer-division{
+    display: flex;
+    flex-direction: column;
+    margin: 4em;
+}
+
+.footer-division h2{
+    margin-bottom: 1em;
+}
+
+.footer-division a{
+    color:black;
+    text-decoration: none;
+    margin-bottom: 0.8em;
+
+}
+
+.footer-division a:hover{
+    color:#0D9E70;
+    transition: 0.3s ease-out;
+}
