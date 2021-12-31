@@ -1,66 +1,96 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <style>
-        body{background-color: rgba(212, 251, 238, 1);}
-        .a{color:black;font-family: 'Roboto', sans-serif;font-size: 36px;font-weight: normal; margin-left: 600px;}
-        .b{color:black;font-family: 'Roboto', sans-serif;font-size:48px;font-weight: bold;margin-left: 600px;}
-        .c{color:rgba(62, 84, 140, 1);font-family: 'Roboto', sans-serif;font-size: 36px;font-weight: normal;margin-left: 600px;}
-        .d{color: rgba(23, 194, 139, 0.8);font-size: 32px;font-family: 'Roboto', sans-serif;font-weight: 'regular';margin-left: 600px;text-decoration: none;}
-.e{border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-border-radius: 20px;
-width: auto;height: 42px; margin-left: 700px;background-color: rgba(23, 194, 139, 0.7);}
-.i{border-radius: 50px; width: 400px ;height: 30px;margin-left: 600px ; margin-bottom: 30px;font-family: 'Roboto', sans-serif}
-.div {
-  position: relative;
-  
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GrocerEase</title>
 
-.data{
-  margin-top: 50px;
-}
+    <script>
+    function validateform(){
+    var name=document.myform.name.value;
+    var email=document.myform.email.value;
+    var password=document.myform.pass.value;
+    var repassword=document.myform.re_pass.value;
 
-img{
-  position:absolute;
-  left: 300px; 
-  top: 100px;
-  border-radius: 30%;
+    if (name==null || name==""){
+      alert("Name can't be blank");
+      return false;
+    }
 
-}
 
-.div1{
- margin-top: 100px;
+    else if(password.length<6){
+      alert("Password must contain 7 to 15 characters which should only include characters, numeric digits, underscore and first character must be a letter");
+      return false;
 
-  top: 500px;
-}
-        </style>
-        <title>New Here? Sign Up</title>
-        </head>
+      }
+
+      else if (password!=repassword){
+        alert("Passwords not matching");
+        return false;
+      }
+       else if(!myform.agree.checked) {
+      alert("Please indicate that you accept the Terms and Conditions");
+      myform.agree.focus();
+      return false;
+    }
+
+    }
+    </script>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="./Assets/Sign-Up Form/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./Assets/Sign-Up Form/css/style.css">
+</head>
 <body>
-  <div class="div">
-    <a href="./index.html"><img src="./Assets/Glogo.jpeg"></a>
- <div class="div1">
-    <p class="b">Sign Up:</p>
-    <p class="d" style="text-decoration: none;"><a href="./login.html">Login to your Account</a></p>
-    <label class="a" for="adc">Name:</label><br>
-    <input class="i" type="text" id="adc" ><br>
-    <label class="a" for="adc">Email:</label><br>
-    <input class="i" type="text" id="adc" ><br>
-    <label class="a" for="adc">Phone Number:</label><br>
-    <input class="i" type="text" id="adc" ><br>
-    <label class="a" for="acd">Password:</label><br>
+<img src="./Assets/logog.svg" alt="" class="logoimg">
+    <div class="main">
 
-    <input class="i" type="text" id= "acd"><br>
-    <button class="e" type="button" onclick="">Submit</button>
-  </div>
-  
-  
-  </div>
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign Up</h2>
+                        <form method="POST" class="register-form"  name="myform" id="register-form" onsubmit="return validateform()">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Confirm your password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="./Assets/Sign-Up Form/images/online-grocery-store-vector-26982518crop.jpg" alt="sign up image"></figure>
+                        <a href="./login.html" class="signup-image-link">I am already a member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- JS -->
+    <script src="./Assets/Sign-Up Form/vendor/jquery/jquery.min.js"></script>
+    <script src="./Assets/Sign-Up Form/js/main.js"></script>
 </body>
+</html>
