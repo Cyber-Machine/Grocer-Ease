@@ -18,6 +18,24 @@ You can access the site by going through https://cyber-machine.github.io/Grocer-
 
 This project is mainly made using HTML, CSS, JavaScript with the help of Frameworks Bootstrap and ReactJS.
 
+# Screenshots
+
+<img src="./Screenshots/HomePage.png">
+Homepage
+<br>
+<br>
+<br>
+<img src="./Screenshots/LoginPage.png">
+LoginPage
+<br>
+<br>
+<br>
+<img src="./Screenshots/ItemsPage.png">
+ItemsPage
+<br>
+<br>
+<br>
+
 # Experience
  While working on this project we have learned a lot.
  We have summerized our experience(s) through the means of this blog.
