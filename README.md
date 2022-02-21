@@ -37,8 +37,8 @@ ItemsPage
 <br>
 
 # Experience
- While working on this project we have learned a lot.
- We have summerized our experience(s) through the means of this blog.
+ While working on this project we have learned quite a lot.<br>
+ We have briefly written our experiences in the following blogs.
 
 - [Maaz Karim](https://medium.com/@maazkarim02/grocer-ease-front-end-mini-project-1aec55cdaf5e) 
 - [Mandala Guru Akhil](https://medium.com/@20beam045/the-grocer-ease-56129b71b32f)
